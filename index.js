@@ -301,3 +301,4 @@ function togglePaginationButtons(enable) {
 
 /* -------------------- Fin -------------------- */// tema - persistencia localStorage
 // fetch inicial placeholder
+// search & pagination tweak
