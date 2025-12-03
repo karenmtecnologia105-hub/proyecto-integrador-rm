@@ -299,4 +299,4 @@ function togglePaginationButtons(enable) {
   selectors.nextBtn.disabled = !lastPage || currentPage >= lastPage;
 }
 
-/* -------------------- Fin -------------------- */
+/* -------------------- Fin -------------------- */// tema - persistencia localStorage
