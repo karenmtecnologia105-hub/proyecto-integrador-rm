@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="RM Explorer - Proyecto Integrador. Consumo Rick and Morty API, modo oscuro/claro, animaciones y responsive." />
+  <title>RM Explorer - Proyecto Integrador</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">RM Explorer</h1>
+
+      <div class="controls" role="region" aria-label="Controles">
+        <label class="theme-switch" for="themeToggle" aria-label="Alternar tema oscuro">
+          <input id="themeToggle" type="checkbox" />
+          <span class="slider" aria-hidden="true"></span>
+        </label>
+
+        <form id="searchForm" class="search-form" role="search" aria-label="Buscar personajes">
+          <input id="searchInput" type="search" placeholder="Buscar por nombre..." aria-label="Buscar por nombre" />
+          <button type="submit" aria-label="Buscar" class="btn search-btn">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="statusBar" class="status-bar" aria-live="polite"></section>
+
+    <section id="results" class="results-grid" aria-live="polite" role="list">
+      <!-- Cards o skeletons renderizados aquí -->
+    </section>
+
+    <div class="pagination">
+      <button id="prevBtn" class="btn" disabled aria-label="Página anterior">Prev</button>
+      <span id="pageInfo" class="page-info" aria-live="polite">Página 1</span>
+      <button id="nextBtn" class="btn" disabled aria-label="Página siguiente">Next</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Proyecto Integrador - Módulo 1 • JavaScript Junior Developer</p>
+      <p>Datos: <a href="https://rickandmortyapi.com/" target="_blank" rel="noopener">Rick and Morty API</a></p>
+    </div>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
