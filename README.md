@@ -2,8 +2,8 @@
 
 Aplicación que consume la Rick and Morty API para listar personajes en tarjetas con animaciones y modo oscuro/claro.
 
-Demo: https://TU-USUARIO.github.io/NOMBRE-REPO  <!-- reemplaza con tu URL de Pages -->
-Repositorio: https://github.com/TU-USUARIO/NOMBRE-REPO  <!-- reemplaza con tu repo público -->
+Demo:https://karenmtecnologia105-hub.github.io/proyecto-integrador-rm
+Repositorio:https://github.com/karenmtecnologia105-hub/proyecto-integrador-rm
 
 ## Características principales
 - Búsqueda por nombre
@@ -22,10 +22,9 @@ proyecto-integrador/
 └── README.md
 
 ## Cómo probar localmente
-1. Clona el repositorio:
-   `git clone https://github.com/TU-USUARIO/NOMBRE-REPO.git`
+1. Clona el repositorio:git clone https://github.com/karenmtecnologia105-hub/proyecto-integrador-rm.git
 2. Entra en la carpeta:
-   `cd NOMBRE-REPO`
+   ` cd proyecto-integrador-rm
 3. Abre `index.html` en tu navegador o usa un servidor local (recomendado).
 
 ## Notas técnicas
@@ -34,12 +33,17 @@ proyecto-integrador/
 - Las tarjetas usan `requestAnimationFrame` para tilt 3D y respetan `prefers-reduced-motion`.
 
 ## Producción / Deploy (GitHub Pages)
-1. Asegúrate de que el repositorio sea público.
-2. Ve a GitHub → Settings → Pages.
-3. En "Source" selecciona la rama `main` y carpeta `/root`.
-4. Guarda y espera unos minutos; tu sitio estará en:
-   `https://TU-USUARIO.github.io/NOMBRE-REPO`
 
+1. Asegúrate de que el repositorio sea público.  
+2. Ve a GitHub → Settings → Pages.  
+3. En "Source" selecciona la rama `main` y carpeta `/ (root)`.  
+4. Guarda y espera unos minutos; tu sitio estará en:  
+   https://karenmtecnologia105-hub.github.io/proyecto-integrador-rm
+
+Notas:
+- Si acabas de hacer push, GitHub Pages puede tardar 1–5 minutos en construir y publicar el sitio.
+- Si aún no aparece la página, ve a Settings → Pages → Build history o Actions → Pages build and deployment para revisar si hubo errores.
+- Asegúrate de que `index.html` esté en la raíz del repo (no dentro de carpetas) para que la URL funcione correctamente.
 ## Créditos
 Datos provistos por la Rick and Morty API (https://rickandmortyapi.com/).
 
