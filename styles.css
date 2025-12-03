@@ -10,7 +10,7 @@
   --container-max: 1100px;
 }
 
-/* dark theme variables applied when .dark on body */
+
 body.dark {
   --bg: #0b0b13;
   --card-bg: #0f1720;
@@ -20,7 +20,7 @@ body.dark {
   --shadow: rgba(0,0,0,0.6);
 }
 
-/* Reset / base */
+
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -34,7 +34,7 @@ body{
   scroll-behavior:smooth;
 }
 
-/* layout */
+
 .container{
   width:90%;
   max-width:var(--container-max);
@@ -59,14 +59,14 @@ body{
   letter-spacing:0.4px;
 }
 
-/* controls */
+
 .controls{
   display:flex;
   align-items:center;
   gap:1rem;
 }
 
-/* theme switch */
+
 .theme-switch{
   --size:44px;
   position:relative;
@@ -101,7 +101,7 @@ body{
   transform:translateX(20px);
 }
 
-/* search */
+
 .search-form{
   display:flex;
   align-items:center;
@@ -133,7 +133,7 @@ body{
 .search-form button:hover{transform:translateY(-2px)}
 .search-form button:active{transform:translateY(0) scale(0.98)}
 
-/* status bar */
+
 .status-bar{
   margin:1rem 0;
   color:var(--muted);
@@ -144,7 +144,7 @@ body{
   align-items:center;
 }
 
-/* spinner small */
+
 .spinner {
   width:14px;
   height:14px;
@@ -155,7 +155,7 @@ body{
 }
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* results grid */
+
 .results-grid{
   display:grid;
   grid-template-columns:repeat(1,1fr);
@@ -163,7 +163,7 @@ body{
   margin-bottom:1rem;
 }
 
-/* card */
+
 .card{
   position:relative;
   background:linear-gradient(180deg,var(--card-bg),var(--card-bg));
@@ -203,7 +203,7 @@ body{
   font-size:0.9rem;
 }
 
-/* entrance animation for cards (staggered via inline delay) */
+
 .card.animate-in{
   animation: fadeUp 420ms cubic-bezier(.2,.9,.3,1) both;
 }
@@ -212,7 +212,7 @@ body{
   to{opacity:1; transform:translateY(0) scale(1)}
 }
 
-/* skeleton loading styles */
+
 .skeleton{
   position:relative;
   display:flex;
@@ -247,7 +247,7 @@ body{
 }
 .skeleton .small{ width:40% }
 
-/* shimmer overlay inside skeleton elements */
+
 .skeleton::before, .skeleton .skeleton-img::before, .skeleton .line::before{
   content:"";
   position:absolute;
@@ -260,7 +260,7 @@ body{
   to{ transform:translateX(100%); }
 }
 
-/* pagination */
+
 .pagination{
   display:flex;
   gap:0.75rem;
@@ -282,10 +282,10 @@ body{
 .btn[disabled]{opacity:0.45;cursor:not-allowed}
 .page-info{color:var(--muted)}
 
-/* focus outline accessibility */
+
 input:focus, .btn:focus, .theme-switch:focus { outline: 3px solid rgba(92,108,255,0.12); outline-offset:2px }
 
-/* footer */
+
 .site-footer{
   border-top:1px solid rgba(0,0,0,0.04);
   padding:1rem 0;
@@ -295,7 +295,7 @@ input:focus, .btn:focus, .theme-switch:focus { outline: 3px solid rgba(92,108,25
   text-align:center;
 }
 
-/* responsive breakpoints */
+
 @media (min-width: 641px){
   .results-grid{grid-template-columns:repeat(2,1fr)}
 }
@@ -303,11 +303,6 @@ input:focus, .btn:focus, .theme-switch:focus { outline: 3px solid rgba(92,108,25
   .results-grid{grid-template-columns:repeat(3,1fr)}
 }
 
-/* ---------------------------
-  Animaciones y micro-interacciones para las tarjetas
---------------------------- */
-
-/* Respect reduce motion */
 @media (prefers-reduced-motion: reduce) {
   .card, .card img, .card.animate-in, .skeleton::before, .skeleton .skeleton-img::before, .skeleton .line::before { 
     animation: none !important; 
@@ -316,7 +311,7 @@ input:focus, .btn:focus, .theme-switch:focus { outline: 3px solid rgba(92,108,25
   }
 }
 
-/* "Respiración" sutil para imágenes/tarjetas */
+
 @keyframes floatY {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-6px); }
@@ -326,19 +321,19 @@ input:focus, .btn:focus, .theme-switch:focus { outline: 3px solid rgba(92,108,25
   animation: floatY 6s ease-in-out infinite;
 }
 
-/* Pause float at hover/focus to prioritize hover effect */
+
 .card:hover img,
 .card:focus-within img {
   animation-play-state: paused;
 }
 
-/* Tilt + elevación + glow on hover/active */
+
 .card {
   will-change: transform, box-shadow;
   transform-origin: center;
 }
 
-/* elevación + glow on hover */
+
 .card:hover,
 .card:focus-within {
   box-shadow:
@@ -346,7 +341,7 @@ input:focus, .btn:focus, .theme-switch:focus { outline: 3px solid rgba(92,108,25
     0 0 22px rgba(92,108,255,0.09);
 }
 
-/* little overlay glow */
+
 .card::after{
   content: "";
   position: absolute;
@@ -362,17 +357,13 @@ input:focus, .btn:focus, .theme-switch:focus { outline: 3px solid rgba(92,108,25
   opacity: 1;
 }
 
-/* touch press */
+
 .card:active {
   transform: translateY(-4px) scale(0.995);
 }
 
-/* focus accessible */
+
 .card:focus {
   outline: 3px solid rgba(92,108,255,0.12);
   outline-offset: 4px;
-}/* styles base - kmartinez15 */
-/* styles base - kmartinez15 */
-/* layout mobile-first tweak */
-/* skeleton count tweak */
-/* animaciones: timing tweak */
+}
